@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>CHITKARA LOCATIONS</title>
+    <style>
+      #map {
+        height: 100%;
+      }
+     html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: {lat: 30.516146, lng: 76.659329}
+        });
+        var labels =[
+        "Tesla Block",
+        "Exploretorium",
+        "Indoor Sports",
+        "Outdoor Sports",
+        "UCO Bank",
+        "Chitkara Woods",
+        "Newton Block",
+        "ME Workshop",
+        "TQ",
+        "Square one",
+        "Chitkara School of Hospitality",
+        "Chitkara Bus Stand",
+        "CSHS Park",
+        "Ground",
+        "Edision Block",
+        "Play Ground",
+        "Marco Polo Hostel",
+        "Boys Hostel",
+        "Vasco Hostel",
+        "Pie A Hostel",
+        "Pie B Hostel",
+        "Pie C Hostel",
+        "Business School",
+        "Library",
+        "Turing Block",
+        "Park",
+        "Bloom's Building",
+        "Girl's Hostel Mess",
+        "Teresa Hostel",
+        "Nightingle Girls Hostel",
+        "Architecture School",
+        "Babbage Block",
+        "ATM",
+        "Gate no. 1",
+        "Galileo Block",
+        "Gate no. 4",
+        "Gate no. 3",
+        "Gate no. 2",
+        "Gate no. 5",
+        "Parking Area"
+        ];
+ var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: 30.515787, lng: 76.656430},
+        {lat: 30.515862, lng: 76.657386},
+        {lat: 30.515887, lng: 76.658175},
+        {lat: 30.516173, lng: 76.658384},
+        {lat: 30.516874, lng: 76.657421},
+        {lat: 30.516168, lng: 76.659140},
+        {lat: 30.516431, lng: 76.659247},
+        {lat: 30.515200, lng: 76.659091},
+        {lat: 30.514999, lng: 76.659714},
+        {lat: 30.515212, lng: 76.659840},
+        {lat: 30.514852, lng: 76.659535},
+        {lat: 30.514508, lng: 76.659561},
+        {lat: 30.515640, lng: 76.659352},
+        {lat: 30.515818, lng: 76.659805},
+        {lat: 30.516342, lng: 76.659897},
+        {lat: 30.514947, lng: 76.660994},
+        {lat: 30.513674, lng: 76.660878},
+        {lat: 30.513817, lng: 76.661393},
+        {lat: 30.514122, lng: 76.661876},
+        {lat: 30.514408, lng: 76.662270},
+        {lat: 30.514637, lng: 76.662295},
+        {lat: 30.514963, lng: 76.662315},
+        {lat: 30.515619, lng: 76.661110},
+        {lat: 30.515672, lng: 76.660699},
+        {lat: 30.516418, lng: 76.660640},
+        {lat: 30.517082, lng: 76.659425},
+        {lat: 30.516818, lng: 76.658784},
+        {lat: 30.516941, lng: 76.658733},
+        {lat: 30.517160, lng: 76.658778},
+        {lat: 30.517426, lng: 76.660825},
+        {lat: 30.517209, lng: 76.660465},
+        {lat: 30.517376, lng: 76.660159},
+        {lat: 30.517770, lng: 76.658901},
+        {lat: 30.517976, lng: 76.659134},
+        {lat: 30.515720, lng: 76.658988},
+        {lat: 30.515906, lng: 76.658888},
+        {lat: 30.516935, lng: 76.657571},
+        {lat: 30.517446, lng: 76.658336},
+        {lat: 30.514658, lng: 76.660266},
+        {lat: 30.516761, lng: 76.658133}
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1aNWuEIVelCH8eMwOJf9J7SPzNgWQDuU&callback=initMap">
+    </script>
+  </body>
+</html>

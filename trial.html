@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+.text1
+{
+font-family: "Times New Roman";
+
+font-size: 26px;
+padding: 20px;
+border-radius: 15px;
+width: 350px;
+position: absolute;
+height: 220px;    
+left: 0px;
+top: 1200px;
+background-color: yellow;
+text-align: center;
+}
+
+.text2
+{
+font-family: "Times New Roman";
+
+font-size: 20px;
+padding: 20px;
+border-radius: 15px;
+width: 380px;
+position: absolute;
+height: 280px;    
+right: 0px;
+top: 1200px;
+background-color: yellow;
+
+}
+
+
+#i
+{
+text-align: center;
+font-family: Castellar;
+font-size: 40px;
+color: rgb(102,255,102);
+text-decoration: underline
+}
+#j
+{
+font-family: Pristina;
+font-size: 30px;
+margin-left: 15px;
+}
+.overall
+{
+
+margin-top: 1300px;
+margin-left: -500px;
+z-index:1000;
+}
+.sport
+{
+	position: absolute;
+	top: 210px;
+	right: 10px;
+
+}
+.back
+{
+position: absolute;
+top: 5px;
+opacity: 0.3;
+
+}
+.back1
+{
+position: absolute;
+top: 1200px;
+left: 430px;
+}
+.back2
+{
+position: absolute;
+top: 220px;
+}
+.back3
+{
+position: absolute;
+top: 1600px;
+right: 10px;
+}
+</style>
+<body>
+    <a href="proj1.html">WAY TO HOMEPAGE..</a>
+<p id="i">Indoor and Outdoor Stadium</p> 
+<img src="sport10.jpg" height="700px" width="800px" alt="sport" class="sport">
+<div class="w3-container"> 
+  <p id="j">Through its excellent sports facilities, Chitkara University offers opportunities to students for regular work-out, lifestyle management and interaction.</p>
+</div>
+<div class="text1">
+<ul>
+<li id="a">Football field</li>
+<li id="a">Cricket ground</li>
+<li id="a">Jogging track with a rubberised surface</li>
+</ol>
+</div>
+<div class="text2">
+<ul>
+<li id="b">Gymnasium with cardiovascular equipment, weights, strength training and flexibility machines</li>
+<li id="b">Basketball court built to NBA specifications</li>
+<li id="b">1 Badminton court, 1 volleyboll court, 1 tennis court.All under one roof.</li>
+</ol>
+</div>
+
+<div class="overall">
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="sport6.jpg" style="width:100%">
+  <img class="mySlides" src="sport7.jpg" style="width:100%">
+  <img class="mySlides" src="extra24.jpg" style="width:100%">
+  <img class="mySlides" src="sport9.jpg" style="width:100%">
+  <img class="mySlides" src="sport11.jpg" style="width:100%">
+  <img class="mySlides" src="sport12.jpg" style="width:100%">
+  <img class="mySlides" src="sport13.jpg" style="width:100%">
+  <img class="mySlides" src="sport14.jpg" style="width:100%">
+  <img class="mySlides" src="sport16.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>  
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>  
+</div>
+</div>
+</div>
+ <div class="back">
+</div>
+<img src="back5.jpg" height="2300px" width="1400px" alt="back" class="back">
+<img src="extra14.jpg" height="270px" width=400px" alt="back1" class="back1">
+<img src="sport17.jpg" height="900px" width="400px" alt="back2" class="back2">
+<img src="sport18.jpg" height="700px" width="400px" alt="back3" class="back3">
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+</script>
+
+</body>
+</html> 
+

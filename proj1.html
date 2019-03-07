@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width,initial scale=1.0">  
+<title>2</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js">
+    </script>
+    <script type="text/javascript">
+        $(window).on('scroll',function() {
+                     if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+       else{
+            $('nav').removeClass('black');
+        }
+                     })
+    </script>
+<style>
+    img{
+        height:auto;
+        max-width:auto;
+    }
+    @media (min-height:460px){
+    .ph{
+        left:22%;
+        position:absolute;
+        
+    }
+    .ph1{
+        left:49%;
+        position:absolute;
+        
+    }
+    
+    .effect1{
+        font-family:fantasy;
+        
+        
+        
+    }
+    .effect1:hover img{
+       
+        background-size: cover;
+        opacity:0.6;
+	
+}
+
+	
+    .row{
+        background-size:cover;
+    
+    }
+        nav{
+            position:fixed;
+           top:0;
+            left:0;
+            width:100%;
+            height:100px;
+            padding 10px 200px;
+            box-sizing: border-box;
+            transition: .3s;
+            z-index:1000;
+        }
+        nav.black{
+            background:rgba(1,1,1,0.6);
+            height:60px;
+            padding:10px 60px;
+        }
+   nav ul {
+        
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+   /* background-color: #333;*/
+        
+       display:flex;
+       float:right;
+       
+	
+}
+    nav ul li{
+            list-style-type: none;
+            
+    float:right;
+font-weight: 600px;
+text-align: center;
+margin-left:5%;
+        }
+
+/*li {
+    
+    float:right;
+font-weight: 600px;
+text-align: center;
+margin-left:3%;
+}*/
+
+nav ul li a {
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 15px 21px;
+    line-height:30px;
+    text-decoration: none;
+    
+    
+	
+
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+    .active {
+        background-color: #717171;}
+    .effect2{
+        position:absolute;
+        top: 430px;
+        z-index:1000;
+        font-family: fantasy;
+        font-weight: bolder;
+        font-size:50px;
+        left:25%;
+    }
+    .effect3{
+        position:absolute;
+        top:200px;
+        z-index:100;
+        font-size:20px;
+        /*margin-left: 1040px;
+        margin-top: 50px;*/
+        font-weight:bold;
+        font-size:24px;
+        word-spacing: 2px;
+        
+        
+    }
+    h1 {
+  font-family: "Pacifico";
+}
+
+
+
+    .effect4{
+        left:40%;
+        border:2px;
+        top:8400px;
+        position: absolute;
+    }
+    
+    #effect5{
+        position: absolute;
+        left:15%;
+        font-size: 36px;
+        font-weight: bolder;
+        color:black;
+        margin-top:auto;
+        z-index:100;
+        margin-bottom: auto;
+        text-decoration: underline;
+    }
+    .effect6{
+        position:absolute;
+        top: 450px;
+        z-index:100;
+        border-radius:50px;
+    }
+    
+    body{
+        background:linear-gradient(#ffffff,#cccc99);
+    }
+    .effect9{
+       position:absolute;
+        top:2200px;
+        z-index:1000px;
+        font-size: 48px;
+        font-weight: 600;
+        
+        margin-left: 40%;
+    }
+    #effect10{
+       
+        margin-left:30%;
+    }
+    .zoomin img {
+  height: 300px;
+  width: 500px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.zoomin img:hover {
+  width: 450px;
+  height: 450px;
+}
+    .box img
+	{
+		width: 400px;
+		border-radius: 50px solid #660000;
+		padding: 50px;
+	}
+	.box img:hover
+	{
+		-moz-box-shadow: 0 0 20px #ccc;
+		-webkit-box-shadow: 0 0 20px #aaa;
+		box-shadow: 0 0 20px #ccc;
+	}
+    .box1 img
+	{
+		width: 200px;
+		border-radius: 50px solid #ffcc98;
+		padding: 20px;
+        
+	}
+	.box1 img:hover
+	{
+		-moz-box-shadow: 0 0 10px #acb;
+		-webkit-box-shadow: 0 0 10px #abb;
+		box-shadow: 0 0 10px #cab;
+	}
+    .my-wrapper{
+        background-color: #ccc999;
+        
+    }
+    .my-wrapper:hover img{
+      opacity:0.5;
+    }
+        .newc{
+            background-color: #000;
+        }
+        .newc img{
+            opacity:0.7;
+        }
+    hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 36px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    color:#fff;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+    
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+    .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  /*background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;*/
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 25%;
+    margin-right: 3%;
+}
+    }
+
+    </style>
+    <body>
+        <nav>
+        <ul>
+            <li><a href="Aboutus.html"><font color="orange" size="5px">AboutUs</font></a></li>
+ 
+            <li><a href="#effect10"><font color="orange" size="5px">ContactUs</font></a></li>
+    
+</ul>
+        </nav>  
+         <p class="text"></p>
+        
+        
+        
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="ph19.jpg">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="ph22.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="cu_banner.jpg">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+<img src="ph25.jpg">
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    <br><br><br><br><br><br>
+        <p class="effect2"><u>WELCOME TO CHITKARA UNIVERSITY</u>
+            <img src="img7.jpg"></p>
+        <div class="hvrbox">
+           
+            <img src="cu_1.jpg" class="hvrbox-layer_bottom"><div class="hvrbox-layer_top"><div class="hvrbox-text"><a href="#effect5"><font color="white">WELCOME NEWBIES</font></a></div></div>           
+        </div>
+        
+        <br><br><br><br><br><br>
+   
+        <br><br><br><br><br><br>
+        <center><font color="brown" size="22px">CLICK-ON ANY</font> </center>
+        <div class="row1">
+            <table>
+                <tr class="zoomin">
+                    <td><a href="https://www.chitkara.edu.in/engineering/"><img src="ph2.jpg"></a></td>
+                    <td><a href="https://www.chitkara.edu.in/engineering/"><img src="engg-image.jpg"></a></td>
+                    <td><a href="https://www.chitkara.edu.in/engineering/"><img src="wipro.jpg"></a></td></tr>
+            </table>
+            </div>
+        <br><br><br><br><br><br>
+    
+        <div class="row" ><div class="hvrbox"><a></a><img src="ph17.jpeg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top">
+                <div class="hvrbox-text"><HR><a href="loc.html" target="_blank"><font color="white">NAVIGATE THE CAMPUS</font></a><HR></HR></HR></div></div>
+            </div></div>
+        <br><br><br><br><br><br>
+        <div id="effect5">WHAT YOU SHOULD KNOW ABOUT CHITKARA..</div>
+        <br><br><br><br><br><br>
+		<div class="box">
+            
+			<table>
+                <tr>
+                    <td class="my-wrapper"><a href="placements.html" target="_blank"><img src="ph15.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="food1.html" target="_blank"><img src="ph7.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="trial.html"><img src="ph11.jpeg"></a></td></tr>
+                <tr><td class="my-wrapper"><a href="radiopage.html" target="_blank"><img src="ph14.jpg"></a></td>
+                    <td class="my-wrapper"><a href="library1.html" target="_blank"><img src="ph5.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="hostel.html" target="_blank"><img src="ph13.jpg"></a></td></tr>
+                <tr><td class="my-wrapper"><a href="bankpage.html"target="_blank"><img src="ph10.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="emerpage.html" target="_blank"><img src="ph12.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="explore.html" target="_blank"><img src="ph9.jpeg"></a></td></tr>
+                <tr><td class="my-wrapper"><a href="extra.html"><img src="ph4.jpeg"></a></td>
+                    <td class="my-wrapper"><a href="transport.html"><img src="ph3.jpeg"></a></td>
+			</tr>	
+
+            </table>
+		</div>
+        
+            <div class="box1">
+            <table id="effect10">
+                <p>
+                    <center><font color="brown"size="6px">You can always visit or follow us on social media : <a href="https://www.facebook.com/ChitkaraU/">facebook </a></font></center></p>
+        
+                <tr><td><a href="signup.html" target="blank"><img src="ph26.jpg"></a></td>
+                <td><a href="signup.html" target="blank"><img src="ph27.jpg"></a></td>
+                <td><a href="signup.html" target="blank"><img src="ph28.jpg"></a></td>
+                </tr></table>
+            </div>
+            <div class="ph"><img src="ph54.jpg"></div>
+        <div class="ph1"><img src="ph55.jpg"></div>
+       
+        
+         
+    </body>
+    </head>
+</html>
